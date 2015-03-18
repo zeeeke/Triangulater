@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B3149A251AB7D9BC00C4845C /* TRGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3149A241AB7D9BC00C4845C /* TRGDetailViewController.m */; };
 		B3149A271AB7DC3C00C4845C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3149A261AB7DC3C00C4845C /* CoreBluetooth.framework */; };
+		B3149A2C1AB7EA7700C4845C /* UIColor+RSSI.m in Sources */ = {isa = PBXBuildFile; fileRef = B3149A2B1AB7EA7700C4845C /* UIColor+RSSI.m */; };
 		B3813DCC1AB4D26200A37690 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3813DCB1AB4D26200A37690 /* main.m */; };
 		B3813DCF1AB4D26200A37690 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3813DCE1AB4D26200A37690 /* AppDelegate.m */; };
 		B3813DD21AB4D26200A37690 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3813DD11AB4D26200A37690 /* ViewController.m */; };
@@ -32,6 +33,8 @@
 		B3149A231AB7D9BC00C4845C /* TRGDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGDetailViewController.h; sourceTree = "<group>"; };
 		B3149A241AB7D9BC00C4845C /* TRGDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGDetailViewController.m; sourceTree = "<group>"; };
 		B3149A261AB7DC3C00C4845C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B3149A2A1AB7EA7700C4845C /* UIColor+RSSI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RSSI.h"; sourceTree = "<group>"; };
+		B3149A2B1AB7EA7700C4845C /* UIColor+RSSI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RSSI.m"; sourceTree = "<group>"; };
 		B3813DC61AB4D26200A37690 /* Triangulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3813DCA1AB4D26200A37690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3813DCB1AB4D26200A37690 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +69,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3149A281AB7EA1200C4845C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3813DD01AB4D26200A37690 /* ViewController.h */,
+				B3813DD11AB4D26200A37690 /* ViewController.m */,
+				B3149A231AB7D9BC00C4845C /* TRGDetailViewController.h */,
+				B3149A241AB7D9BC00C4845C /* TRGDetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B3149A291AB7EA2300C4845C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B3149A2A1AB7EA7700C4845C /* UIColor+RSSI.h */,
+				B3149A2B1AB7EA7700C4845C /* UIColor+RSSI.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		B3813DBD1AB4D26200A37690 = {
 			isa = PBXGroup;
 			children = (
@@ -88,12 +111,10 @@
 		B3813DC81AB4D26200A37690 /* Triangulator */ = {
 			isa = PBXGroup;
 			children = (
+				B3149A291AB7EA2300C4845C /* Categories */,
+				B3149A281AB7EA1200C4845C /* ViewControllers */,
 				B3813DCD1AB4D26200A37690 /* AppDelegate.h */,
 				B3813DCE1AB4D26200A37690 /* AppDelegate.m */,
-				B3813DD01AB4D26200A37690 /* ViewController.h */,
-				B3813DD11AB4D26200A37690 /* ViewController.m */,
-				B3149A231AB7D9BC00C4845C /* TRGDetailViewController.h */,
-				B3149A241AB7D9BC00C4845C /* TRGDetailViewController.m */,
 				B3813DD31AB4D26200A37690 /* Main.storyboard */,
 				B3813DD61AB4D26200A37690 /* Images.xcassets */,
 				B3813DD81AB4D26200A37690 /* LaunchScreen.xib */,
@@ -232,6 +253,7 @@
 				B3813DCF1AB4D26200A37690 /* AppDelegate.m in Sources */,
 				B3813DCC1AB4D26200A37690 /* main.m in Sources */,
 				B3149A251AB7D9BC00C4845C /* TRGDetailViewController.m in Sources */,
+				B3149A2C1AB7EA7700C4845C /* UIColor+RSSI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
